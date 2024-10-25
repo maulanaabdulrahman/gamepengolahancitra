@@ -155,7 +155,7 @@ function App() {
         }, 1500);
       }
     } else {
-      setScore(Math.max(0, score - 1));
+      setScore(score - 1);
     }
   };
 
@@ -245,7 +245,7 @@ function App() {
             <div className="flex items-center">
               <Timer className="text-red-500 w-6 h-6 sm:w-8 sm:h-8 mr-2" />
               <span className="text-lg sm:text-xl font-semibold text-gray-800">
-                Waktu: {timeLeft}d
+                Waktu: {timeLeft} detik
               </span>
             </div>
             <button
